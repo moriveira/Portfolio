@@ -71,7 +71,7 @@ body::before {
 }
 
 #about {
-    transition: all 1s;
+    transition: all 2.5s;
     font-size: 40px;
     font-family: "Bebas Neue", sans-serif;
     margin-left: 15%;
