@@ -3,7 +3,7 @@ window.addEventListener('scroll', function() {
     const aboutElement1 = document.querySelector('#about');
 
     
-    if (scrollY1 > 550) {
+    if (scrollY1 > 650) {
         aboutElement1.style.opacity = '100%';
     } else {
         aboutElement1.style.opacity = '0%';
