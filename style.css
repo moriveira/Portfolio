@@ -1,0 +1,166 @@
+*{
+    color: white;
+}
+
+body {
+    background-image: url(img/background.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 300%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+#menu .interact {
+    margin-left: auto;
+    display: flex;
+}
+
+#menu  {
+    display: flex;
+    margin: 1%;
+    padding-bottom: 1%;
+    gap: 25px;
+    font-size: 9px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.454);
+    font-family: "Quicksand", sans-serif;
+}
+
+#menu .name {
+    font-family: "Gideon Roman", serif;
+}
+
+#info {
+    font-size: 60px;
+    font-family: "Bebas Neue", sans-serif;
+    position: relative;
+}
+
+#info .aboutinfo {
+    margin-top: -3%;
+    font-family: "Quicksand", sans-serif;
+    font-size: 10px;
+    padding-right: 60%;
+    padding-bottom: 30%;
+    
+}
+
+.date {
+    font-size: 35px;
+    position: absolute;
+    right: 12%;
+    top: 20%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#numero {
+    font-size: 200px;
+}
+
+#mes {
+    font-size: 35px;
+}
+
+#about {
+    transition: all 1s;
+    font-size: 40px;
+    font-family: "Bebas Neue", sans-serif;
+    margin-left: 15%;
+    margin-top: 0%;
+}
+
+#about .aboutext {
+    font-size: 27px;
+    font-family: "Quicksand", sans-serif;
+    padding-right: 60%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.fade {
+    animation: fadeIn 1s ease;
+}
+
+
+
+@media screen and (max-width: 1250px) {
+}
+
+@media screen and (max-width: 750px) {
+    #menu {
+        font-size: 8px;
+    }
+
+    .date {
+        margin-left: 0%;
+        justify-content: center;
+        position: relative;
+        display: flex;
+        border-bottom: none;
+    }
+
+    #info .aboutinfo{
+        padding-right: 10%;
+    }
+
+    #about .aboutext {
+        padding-right: 40%;
+    }
+
+    #about {
+        margin-top: 40%;
+        margin-left: 0%;
+    }
+
+    .occupation {
+        display: none;
+    }
+
+    #info {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #info .aboutinfo{
+        padding-right: 0%;
+    }
+
+    #about {
+        margin-top: 130%;
+        margin-left: 0%;
+    }
+
+    #about .aboutext {
+        padding: 0%;
+    }
+}
