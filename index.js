@@ -3,6 +3,8 @@ window.addEventListener('scroll', function() {
     const aboutElement1 = document.querySelector('#about');
     const scrollY2 = window.scrollY;
     const aboutElement2 = document.querySelector('#works');
+    const scrollY3 = window.scrollY;
+    const aboutElement3 = document.querySelector('#contact');
 
     
     if (scrollY1 > 350) {
@@ -15,5 +17,11 @@ window.addEventListener('scroll', function() {
         aboutElement2.style.opacity = '100%';
     } else {
         aboutElement2.style.opacity = '0%';
+    }
+
+    if (scrollY3 > 2300) {
+        aboutElement3.style.opacity = '100%';
+    } else {
+        aboutElement3.style.opacity = '0%';
     }
 });
