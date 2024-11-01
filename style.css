@@ -51,6 +51,9 @@ body::before {
     font-size: 9px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     font-family: "Quicksand", sans-serif;
+    position: fixed;
+    top: 0;
+    width: 98%;
 }
 
 #menu .name {
