@@ -218,7 +218,7 @@ body {
     font-family: "Bebas Neue", sans-serif;
     padding-bottom: 5%;
     background-color: rgba(0, 0, 0, 0.9);
-    width: 100vw;
+    width: 100%;
 }
 
 #contact .contacttext h1 {
