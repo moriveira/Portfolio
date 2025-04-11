@@ -28,6 +28,11 @@ body {
     text-decoration: none;
 }
 
+.aboutme h1, .works h1, .contact h1{
+    margin-left: 5px;
+}
+
+
 .interact h1 {
     transition: 0.5s all;
     border-bottom: 2px solid transparent;
