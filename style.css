@@ -295,10 +295,13 @@ body {
 }
 
 
+@media screen and (max-width: 1490px) {
+    #works .worksimages {
+        transform: scale(0.8);
+    }
+}
 
-
-
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1300px) {
     #picture .user{
         display: none;
     }
@@ -306,6 +309,7 @@ body {
     #works .worksimages {
         align-items: center;
         flex-direction: column;
+        transform: scale(1);
     }
 
     #about .aboutext {
