@@ -218,6 +218,7 @@ body {
 }
 
 #contact {
+    transition: all 1.5s;
     user-select: none;
     margin-top: 20%;
     font-family: "Bebas Neue", sans-serif;
@@ -417,4 +418,5 @@ body {
     #contact .socials a {
         font-size: 15px;
     }
+
 }
