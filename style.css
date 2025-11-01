@@ -422,16 +422,25 @@ body {
         margin-left: 10%;
     }
 
+
     #picture .user{
-        margin-left: 40%;
+        margin-left: 25%;
         position: relative;
         display: flex;
         justify-content: center;
     }
 
-    #picture .user img {
-        width: 200px;
-        height: 200px;
+    .img-container h2 {
+        width: 72%;
+    }
+
+    #picture .img-container img {
+        width: 270px;
+        height: 400px;
+    }
+
+    #knowledge {
+        display: none;
     }
 
     #picture .user:hover p {
