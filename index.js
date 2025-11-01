@@ -19,7 +19,7 @@ window.addEventListener('scroll', function() {
         aboutElement2.style.opacity = '0%';
     }
 
-    if (scrollY3 > 2600) {
+    if (scrollY3 > 2400) {
         aboutElement3.style.opacity = '100%';
     } else {
         aboutElement3.style.opacity = '0%';
