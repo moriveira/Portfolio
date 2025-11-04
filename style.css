@@ -372,6 +372,14 @@ body {
         font-size: 8px;
     }
 
+    #info .aboutinfo {
+        font-size: 10px;
+    }
+
+    .abouttext {
+        font-size: 24px;
+    }
+
     .date {
         margin-left: 0%;
         justify-content: center;
