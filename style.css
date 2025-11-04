@@ -231,15 +231,17 @@ body {
 
 .knowledge-icons1 img {
     width: 40px;
+    height: 40px;
     border: none;
 }
 
 .knowledge-icons2 img {
-    width: 40px;
     border: none;
+    width: 40px;
+    vertical-align: middle;
 }
 
-.knowledge-icons1 .html-icon, .css-icon, .knowledge-icons2 .node-icon {
+.knowledge-icons1 .html-icon, .css-icon {
     filter: invert(1);
 }
 
@@ -335,8 +337,17 @@ body {
 }
 
 @media screen and (max-width: 1300px) {
+    .img-container h2 {
+        width: 276px;
+    }
+
     #picture .user{
-        display: none;
+        position: relative;
+        margin-left: 15%;
+        display: flex;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
     }
 
     #works .worksimages {
@@ -441,22 +452,19 @@ body {
 
 
     #picture .user{
+        position: relative;
         margin-left: 25%;
         display: flex;
         justify-content: center;
-        margin-top: 200%;
+        margin-top: 5%;
+    }
+
+    .img-container h2 {
+        width: 276px;
     }
 
     #about {
         padding-bottom: 600px;
-    }
-
-    .img-container h2 {
-        width: 90%;
-    }
-
-    #knowledge {
-        display: none;
     }
 
     #about {
