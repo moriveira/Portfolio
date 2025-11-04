@@ -392,6 +392,10 @@ body {
         margin-top: 5%;
     }
 
+    .knowledge-icons1 img, .knowledge-icons2 img {
+        border: none;
+    }
+
     .occupation {
         display: none;
     }
