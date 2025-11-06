@@ -7,21 +7,34 @@ window.addEventListener('scroll', function() {
     const aboutElement3 = document.querySelector('#contact');
 
     
-    if (scrollY1 > 600) {
+    if (scrollY1 > 400) {
         aboutElement1.style.opacity = '100%';
     } else {
         aboutElement1.style.opacity = '0%';
     }
 
-    if (scrollY2 > 1850) {
+    if (scrollY2 > 1400) {
         aboutElement2.style.opacity = '100%';
     } else {
         aboutElement2.style.opacity = '0%';
     }
 
-    if (scrollY3 > 2400) {
+    if (scrollY3 > 2100) {
         aboutElement3.style.opacity = '100%';
     } else {
         aboutElement3.style.opacity = '0%';
     }
 });
+
+const themeBody = document.querySelector('body')
+const themeBg = document.getElementById('bg')
+const buttonTheme = document.querySelector('.theme-button')
+
+
+function whiteTheme() {
+    themeBody.classList.toggle('whitetheme')
+
+}
+
+buttonTheme.onclick = whiteTheme;
+

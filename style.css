@@ -1,8 +1,53 @@
-*{
-    color: white;
+body {
+    color: rgb(190, 190, 190);
+    transition: all 0.5s;
 }
 
-html, body {
+.whitetheme {
+    color: rgb(55, 55, 55);
+}
+
+.whitetheme #bg {
+    filter: invert(0.7);
+}
+
+.whitetheme .theme-button {
+    filter: invert(0);
+}
+
+.whitetheme .img-container h2 {
+    color: rgb(190, 190, 190);
+}
+
+.whitetheme #menu .interact a {
+    color: rgb(41, 41, 41);
+}
+
+.whitetheme #works .worksimages p {
+    color: rgb(41, 41, 41);
+    border: 3px solid rgb(41, 41, 41);
+    box-shadow: 10px 10px 36px 0px rgba(0, 0, 0, 0.75);
+}
+
+.whitetheme #works .worksimages p:hover {
+    transition: all 0.4s;
+    border: 3px solid rgb(41, 41, 41);
+    color: rgb(190, 190, 190);
+    ;
+    background-color: rgb(41, 41, 41);
+}
+
+.whitetheme .knowledge-icons1,
+.whitetheme .knowledge-icons2 {
+    filter: invert(0.8);
+}
+
+.theme-button:active {
+    transform: translateY(3px)
+}
+
+html,
+body {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -12,23 +57,32 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+#bg {
     background-image: url(img/gradientbackground.jpg);
     background-repeat: repeat;
     background-size: cover;
     background-position: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.5s;
 }
+
 
 #menu .interact {
     margin-left: auto;
     display: flex;
 }
 
-#menu .interact a{
+#menu .interact a {
     text-decoration: none;
+    color: rgb(190, 190, 190);
 }
 
-.aboutme h1, .works h1, .contact h1{
+.aboutme h1,
+.works h1,
+.contact h1 {
     margin-left: 5px;
 }
 
@@ -38,12 +92,12 @@ body {
     border-bottom: 2px solid transparent;
 }
 
-.interact h1:hover{
+.interact h1:hover {
     transition: 0.5s all;
     border-bottom: 2px solid white;
 }
 
-#menu  {
+#menu {
     z-index: 1;
     backdrop-filter: blur(20px);
     user-select: none;
@@ -62,6 +116,7 @@ body {
 #menu .name {
     margin-left: 1%;
 }
+
 
 #menu ul {
     right: 0;
@@ -82,10 +137,11 @@ body {
     font-size: 4rem;
     font-family: "Bebas Neue", sans-serif;
     position: relative;
+    padding-bottom: 20%;
 }
 
 #info .myposition {
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+    line-height: 0.8;
 }
 
 #info .aboutinfo {
@@ -93,15 +149,24 @@ body {
     font-family: "Quicksand", sans-serif;
     font-size: 13px;
     padding-right: 60%;
-    padding-bottom: 30%;
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 1);
+}
+
+.theme-button {
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    padding: 14px 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+    filter: opacity(0.5);
+    filter: invert(1);
 }
 
 .date {
     font-size: 35px;
     position: absolute;
     right: 12%;
-    top: 15%;
+    top: 20%;
 }
 
 #numero {
@@ -130,7 +195,6 @@ body {
     font-size: 27px;
     font-family: "Quicksand", sans-serif;
     padding-right: 60%;
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 1);
 }
 
 #picture .user {
@@ -158,7 +222,8 @@ body {
     top: 0;
     width: 90%;
     padding: 12px;
-    background-image: linear-gradient(#292929, #333); /* mesma cor do border-top */
+    background-image: linear-gradient(#292929, #333);
+    /* mesma cor do border-top */
 }
 
 #works {
@@ -166,7 +231,7 @@ body {
     transition: all 1.5s;
 }
 
-#works .workstext{
+#works .workstext {
     font-family: "Bebas Neue", sans-serif;
     font-size: 40px;
     padding-top: 100px;
@@ -197,7 +262,7 @@ body {
     text-decoration: none;
     font-family: "Bebas Neue", sans-serif;
     font-size: 30px;
-    box-shadow: 10px 10px 36px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 36px 0px rgba(0, 0, 0, 0.75);
     width: 70%;
 }
 
@@ -207,7 +272,7 @@ body {
     color: black;
     backdrop-filter: blur(5px);
     background-color: rgba(255, 255, 255, 0.8);
-    
+
 }
 
 #works img {
@@ -216,12 +281,12 @@ body {
 
 #works a {
     filter: opacity(0.5);
-    transition: 1s; 
+    transition: 1s;
 }
 
 #works a:hover {
     filter: opacity(1);
-    transition: 1s; 
+    transition: 1s;
 }
 
 .knowledge-text1 {
@@ -241,7 +306,8 @@ body {
     vertical-align: middle;
 }
 
-.knowledge-icons1 .html-icon, .css-icon {
+.knowledge-icons1 .html-icon,
+.css-icon {
     filter: invert(1);
 }
 
@@ -267,7 +333,7 @@ body {
     text-align: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     font-size: 120px;
-    
+
 }
 
 #contact .socials {
@@ -319,6 +385,7 @@ body {
         opacity: 0;
         transform: translateY(20px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0px);
@@ -341,7 +408,7 @@ body {
         width: 276px;
     }
 
-    #picture .user{
+    #picture .user {
         position: relative;
         margin-left: 15%;
         display: flex;
@@ -370,38 +437,43 @@ body {
 @media screen and (max-width: 750px) {
     #menu {
         font-size: 8px;
+        align-items: center;
     }
 
-    #info .aboutinfo {
-        font-size: 10px;
+    .theme-button svg {
+        width: 15px;
+        height: 15px;
     }
 
-    .aboutext {
-        font-size: 24px;
+    .theme-button {
+        margin-bottom: -1%;
+        margin-left: -2%;
+        padding: 0;
     }
 
     .date {
-        margin-left: 0%;
+        margin-top: 10%;
         justify-content: center;
         position: relative;
         display: flex;
         border-bottom: none;
     }
 
-    #info .aboutinfo{
+    #info {
+        padding-top: 10%;
+    }
+
+    #info .aboutinfo {
         padding-right: 2%;
     }
 
     #about .aboutext {
         padding-right: 15%;
+        font-size: 25px;
     }
 
     #about {
         margin-top: 5%;
-    }
-
-    .knowledge-icons1 img, .knowledge-icons2 img {
-        border: none;
     }
 
     .occupation {
@@ -444,7 +516,7 @@ body {
     #works .workstext {
         margin-left: 10%;
     }
-    
+
     .user img {
         border: 3px solid #555;
         border-top: 0px solid transparent;
@@ -459,11 +531,11 @@ body {
         top: 0;
         width: 90%;
         padding: 12px;
-        background-image: linear-gradient(#292929, #333); /* mesma cor do border-top */
+        background-image: linear-gradient(#292929, #333);
     }
 
 
-    #picture .user{
+    #picture .user {
         position: relative;
         margin-left: 25%;
         display: flex;
@@ -471,12 +543,16 @@ body {
         margin-top: 5%;
     }
 
+    .knowledge-icons1 img, .knowledge-icons2 img {
+        border: none;
+    }
+
     .img-container h2 {
         width: 276px;
     }
 
     #about {
-        padding-bottom: 180px;
+        padding-bottom: 100px;
     }
 
     #about {
