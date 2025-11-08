@@ -26,15 +26,11 @@ window.addEventListener('scroll', function() {
     }
 });
 
-const themeBody = document.querySelector('body')
-const themeBg = document.getElementById('bg')
-const buttonTheme = document.querySelector('.theme-button')
 
+const themeBody = document.body;
+const buttonTheme = document.querySelector('.theme-button');
 
-function whiteTheme() {
-    themeBody.classList.toggle('whitetheme')
-
-}
-
-buttonTheme.onclick = whiteTheme;
+buttonTheme.addEventListener('click', () => {
+  themeBody.classList.toggle('whitetheme');
+});
 
